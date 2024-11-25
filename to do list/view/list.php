@@ -45,8 +45,12 @@ include "layout/header.php"
                         </td>
                         <td><?php echo $task->content ?></td>
                         <td><?php echo $task->priority ?></td>
-                        <td> <a href="./index.php?page=delete&id=<?php echo $task->id; ?>" class="btn btn-warning btn-sm">Delete</a></td>
-                        <td> <a href="./index.php?page=edit&id=<?php echo $task->id; ?>" class="btn btn-sm">Update</a></td>
+                        <td class="exclude">
+                            <a href="./index.php?page=delete&id=<?php echo $task->id; ?>" class="btn btn-warning btn-sm">Delete</a>
+                        </td>
+                        <td class="exclude">
+                            <a href="./index.php?page=edit&id=<?php echo $task->id; ?>" class="btn btn-sm">Update</a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

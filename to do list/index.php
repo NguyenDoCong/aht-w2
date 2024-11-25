@@ -26,6 +26,13 @@ use \Controller\TaskController;
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <style>
+        tr:has(input[type="checkbox"]:checked) td:not(.exclude),
+        tr:has(input[type="checkbox"]:checked) td:not(.exclude) label {
+            text-decoration: line-through;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
